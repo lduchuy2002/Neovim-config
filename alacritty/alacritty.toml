@@ -1,0 +1,17 @@
+[general]
+import = ["~/.config/alacritty/carbonfox.toml"]
+
+[window]
+startup_mode = "Maximized"
+# decorations = "Buttonless"
+option_as_alt = "OnlyLeft"
+dynamic_padding = true
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font" }
+size = 19.5
+
+[[keyboard.bindings]]
+chars = "\u001B[13;2u"
+key = "Return"
+mods = "Shift"
