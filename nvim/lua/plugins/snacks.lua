@@ -1,9 +1,5 @@
 local picker = {
   enabled = true,
-  ui_select = false,
-  layout = {
-    fullscreen = true
-  },
   sources = {
     explorer = {
       enabled = true,
@@ -69,6 +65,11 @@ return {
     { "<leader>fl", function() Snacks.picker.grep({ exclude = exclue }) end, desc = "Grep" },
     { "<leader>fw", function() Snacks.picker.grep_word({ exclude = exclue }) end, desc = "Visual selection or word", mode = { "n", "x" } },
     { "<leader>fc", function() Snacks.picker.grep_word({
+      on_close = function()
+        vim.schedule(function()
+          vim.cmd("Gvdiffsplit!")
+        end)
+      end,
       search = function()
         return "<<<<<<<"
       end

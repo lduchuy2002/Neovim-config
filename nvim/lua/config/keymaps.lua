@@ -86,3 +86,9 @@ map(
 map("n", "<leader>9", function() vim.cmd([[ b# ]]) end, { desc = "Select previous buffer"} )
 
 map("v", "<C-c>", '"*y', { desc = "Copy to clipboard" })
+
+map("n", "<leader>lg", function() vim.cmd("!set-token") end, { desc = "Generate access token"} )
+
+map("n", "<leader>tg", function() vim.cmd("terminal pnpm gen-types-gis") end, { desc = "Generate type gis schema"} )
+
+map("n", "<leader>tm", function() vim.cmd("terminal pnpm gen-types-main") end, { desc = "Generate type main schema"} )

@@ -106,5 +106,10 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 alias dot="cd ~/dotfiles"
 alias bin="cd ~/bin"
+alias lo="cd ~/projects/linked-office-api"
 alias geo="cd ~/projects/geo-locations-web"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=~/bin:"$PATH"
+eval "$(pyenv init --path)"

@@ -2,6 +2,9 @@ return {
   'MagicDuck/grug-far.nvim',
   config = function()
     require('grug-far').setup({
+      openTargetWindow = {
+        preferredLocation = "right"
+      },
       keymaps = {
         replace = { n = '<localleader>r' },
         qflist = { n = '<localleader>q' },
