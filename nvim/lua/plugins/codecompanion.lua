@@ -6,7 +6,7 @@ return {
     "ravitemer/mcphub.nvim",
     "MeanderingProgrammer/render-markdown.nvim",
     "banjo/contextfiles.nvim",
-    "Davidyz/VectorCode"
+    -- "Davidyz/VectorCode"
   },
   keys = {
     { "<leader>cc", ":CodeCompanionAction", desc = "Code Companion Action" },
@@ -106,10 +106,10 @@ NOTE: Make sure to following the following rules:
                 requires_approval = true,
               }
             },
-            ["vectorcode"] = {
-              callback = require("vectorcode.integrations").codecompanion.chat.make_tool(),
-              description = "Run VectorCode to retrieve the project context.",
-            },
+            -- ["vectorcode"] = {
+            --   callback = require("vectorcode.integrations").codecompanion.chat.make_tool(),
+            --   description = "Run VectorCode to retrieve the project context.",
+            -- },
           }
         }
       },
