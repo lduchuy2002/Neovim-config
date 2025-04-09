@@ -40,8 +40,7 @@ return {
 ```
 - The current branch: `%s`
 
-Review the changes and commit the changes with the following steps:
-- Run command `git add .` to stage all changes.
+Review the changes and commit the changes with the following steps with -n flag:
 - Run command `echo "<current_branch>: <commit_message>\n\n<detail_description>" > /tmp/commit_msg.txt && git commit -F /tmp/commit_msg.txt && rm /tmp/commit_msg.txt` to commit the changes.
 
 NOTE: Make sure to following the following rules:
