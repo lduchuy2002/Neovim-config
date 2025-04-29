@@ -112,6 +112,7 @@ alias geo-api="cd ~/projects/geo-locations-api"
 alias ai="cd ~/projects/ai-project-automation-web/"
 alias ai-api="cd ~/projects/ai-project-automation-api/"
 alias pr="cd ~/projects"
+alias cr="cd ~/projects/bakery1/"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH=/opt/homebrew/bin:$PATH

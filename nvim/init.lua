@@ -18,7 +18,6 @@ require("lazy").setup({
   ui = { border = "single" },
   change_detection = { notify = false }
 })
-require'lspconfig'.pyright.setup{}
 require("config.options")
 require("config.keymaps")
 require("config.autocmds")

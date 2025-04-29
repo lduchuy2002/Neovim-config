@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/carbonfox.toml"]
+import = ["~/.config/alacritty/tokyo-night.toml.toml"]
 
 [window]
 startup_mode = "Maximized"
